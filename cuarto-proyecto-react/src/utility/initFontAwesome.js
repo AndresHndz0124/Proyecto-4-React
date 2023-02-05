@@ -1,5 +1,5 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {fab, faTwitterSquare, faFacebook, faLinkedin, faGithub, faFortAwesome} from "@fortawesome/free-brands-svg-icons";
+import {fab, faTwitterSquare, faFacebook, faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 
 
 function initFontAwesome() {

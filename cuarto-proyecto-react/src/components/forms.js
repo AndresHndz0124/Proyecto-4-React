@@ -13,7 +13,6 @@ function ContactForm() {
         CreateComments: ""
     });
 
-
     const [Viewers, SetViewer] = useState([])
     const ViewersCollection = collection(db, "Viewers")
 
@@ -28,11 +27,22 @@ function ContactForm() {
     const handleSubmit = event => {
         event.preventDefault();
         console.log(formData);
+        resetForm()
     };
 
     const create_comments = async () => {
         await addDoc(ViewersCollection, { name: formData.CreateName, Phone: Number(formData.CreatePhone), email: formData.CreateEmail, Comment: formData.CreateComments })
     }
+
+
+    const resetForm = () => {
+        setFormData({
+            CreateName: "",
+            CreateEmail: "",
+            CreatePhone: "",
+            CreateComments: ""
+        });
+    };
 
     useEffect(() => {
         const GetUsers = async () => {
@@ -72,7 +82,7 @@ function ContactForm() {
             </div>
             <br />
             <div className="Boton_summit"><button type="submit" class="btn btn-warning" onClick={create_comments}>Summit</button></div>
-
+            {/* <div className="Boton_summit"><button type="submit" class="btn btn-warning">Summit</button></div> */}
         </form>
     );
 }
