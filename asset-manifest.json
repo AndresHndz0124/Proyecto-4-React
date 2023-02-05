@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/css/main.c24befff.css",
+    "main.js": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/js/main.44ca5d48.js",
+    "static/js/787.18f4d27f.chunk.js": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/js/787.18f4d27f.chunk.js",
+    "index.html": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/index.html",
+    "main.c24befff.css.map": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/css/main.c24befff.css.map",
+    "main.44ca5d48.js.map": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/js/main.44ca5d48.js.map",
+    "787.18f4d27f.chunk.js.map": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/js/787.18f4d27f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c24befff.css",
+    "static/js/main.44ca5d48.js"
+  ]
+}
