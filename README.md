@@ -1,6 +1,6 @@
 # Proyecto No. 4: Restaurant App React
 
-URL https://andreshndz0124.github.io/Deploy_Proyecto4/
+URL https://andreshndz0124.github.io/Proyecto-4-React/
 
 ## 1. Intro
 El siguiente codigo hace referencia al segundo proyecto del modulo de Fronted del Bootcamp de UCAMP.
