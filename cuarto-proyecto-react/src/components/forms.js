@@ -10,7 +10,9 @@ function ContactForm() {
         CreateName: "",
         CreateEmail: "",
         CreatePhone: "",
-        CreateComments: ""
+        CreateComments: "",
+        CreateNumberPersons: "",
+        CreateDate: "",
     });
 
     const [Viewers, SetViewer] = useState([])
@@ -31,7 +33,13 @@ function ContactForm() {
     };
 
     const create_comments = async () => {
-        await addDoc(ViewersCollection, { name: formData.CreateName, Phone: Number(formData.CreatePhone), email: formData.CreateEmail, Comment: formData.CreateComments })
+        await addDoc(ViewersCollection, { 
+            name: formData.CreateName, 
+            Phone: Number(formData.CreatePhone),
+            email: formData.CreateEmail, 
+            Comment: formData.CreateComments, 
+            Number_persons: formData.CreateNumberPersons,
+            Date: formData.CreateDate, })
     }
 
 
@@ -40,7 +48,9 @@ function ContactForm() {
             CreateName: "",
             CreateEmail: "",
             CreatePhone: "",
-            CreateComments: ""
+            CreateComments: "",
+            CreateNumberPersons: "",
+            CreateDate: "",
         });
     };
 
@@ -63,6 +73,11 @@ function ContactForm() {
             <br />
 
             <div class="form-group">
+                <label for="formGroupExampleInput">Teléfono</label>
+                <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="Phone number" name="CreatePhone" value={formData.CreatePhone} onChange={handleChange} />
+            </div>
+            <br />
+            <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
                     name="CreateEmail" value={formData.CreateEmail} onChange={handleChange} />
@@ -71,8 +86,16 @@ function ContactForm() {
             <br />
 
             <div class="form-group">
-                <label for="formGroupExampleInput">Teléfono</label>
-                <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="Phone number" name="CreatePhone" value={formData.CreatePhone} onChange={handleChange} />
+                <div className="Booking_data">
+                    <div>
+                        <label for="formGroupExampleInput">Numero de personas</label>
+                        <input type="number" class="form-control" name="CreateNumberPersons" value={formData.CreateNumberPersons} onChange={handleChange} />
+                    </div>
+                    <div>
+                        <label for="formGroupExampleInput">Fecha</label>
+                        <input type="date" class="form-control" name="CreateDate" value={formData.CreateDate} onChange={handleChange} />
+                    </div>
+                </div>
             </div>
 
             <br />
