@@ -1,0 +1,85 @@
+.header {
+	height: 80px;
+	color: white;
+}
+
+.fot {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main {
+	width: 85%;
+	height: 900px;
+	background-color: rgb(56, 56, 56);
+	/* display: flex;
+	flex-wrap: wrap; */
+}
+
+#home {
+	/* background-image: url("./images/panorama-2117310.jpg"); */
+	background-image: url("https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/05/02101555/comida-saludable.jpg");
+	background-position: center;
+	/* background-repeat: no-repeat; */
+	/* background-attachment: fixed; */
+	background-size: cover;
+	height: 100vh;
+	padding: 0px 50px 40px 100px;
+
+}
+
+.blog {
+	/* color: rgba(255, 255, 255, 0.856); */
+	color: rgba(255, 255, 255, 0.911);
+	text-align: center;
+	align-items: center;
+}
+
+.subscription{
+	margin: 10px;
+	border-radius: 26px;
+background: #212529;
+text-align: justify;
+padding: 10px;
+}
+
+.flex_footer  {
+	display: inline-block;
+}
+
+.texto >span{padding-left: 10px;}
+
+.texto{
+	text-align: left;
+}
+
+
+form {
+	text-align: left;
+	justify-content: center;
+}
+
+.Boton_summit, h2 {
+	text-align: center;
+}
+
+@media (min-width: 1024px) {
+	.blog {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		padding-left: 4rem;
+		padding-right: 4rem;
+		gap: 4rem;
+	}
+
+	.frase {
+		padding: 50px;
+		border-radius: 40px;
+		box-shadow: inset -10px -10px 20px #ffffff;
+	}
+
+	.ayuda {
+		color: white;
+		margin-top: 0.25rem;
+		font-size: .875em;
+	}
+}
