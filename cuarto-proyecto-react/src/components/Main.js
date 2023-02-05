@@ -12,21 +12,21 @@ function Main() {
     const [NewSize, SetSize] = useState(0)
 
     const [users, SetUsers] = useState([])
-    const UsersCollectioRef = collection(db, "reservas")
+    const UsersCollectioRef = collection(db, "Viewers")
 
 
-    const createReserv = async () => {
-        await addDoc(UsersCollectioRef, { name: NewName, Phone: Number(NewPhone), email: NewEmail, size: Number(NewSize) })
-    }
+    // const createReserv = async () => {
+    //     await addDoc(UsersCollectioRef, { name: NewName, Phone: Number(NewPhone), email: NewEmail, size: Number(NewSize) })
+    // }
 
     const UpdateReserv = async (id, size) => {
-        const userDoc = doc(db, "reservas", id)
+        const userDoc = doc(db, "Viewers", id)
         const newFields = { size: size + 2 }
         await updateDoc(userDoc, newFields)
     }
 
     const deleteReserv = async (id) => {
-        const userDoc = doc(db, "reservas", id)
+        const userDoc = doc(db, "Viewers", id)
         await deleteDoc(userDoc);
     }
 
@@ -116,12 +116,12 @@ function Main() {
     return (
 
         <div className='container main'>
-            <input placeholder="Name" onChange={(event) => { SetNewName(event.target.value) }} />
+            {/* <input placeholder="Name" onChange={(event) => { SetNewName(event.target.value) }} />
             <input type="tel" placeholder="Phone" onChange={(event) => { SetPhone(event.target.value) }} />
             <input type="email" placeholder="Email" onChange={(event) => { SetEmail(event.target.value) }} />
             <input type="number" placeholder="Numero de personas" onChange={(event) => { SetSize(event.target.value) }} />
 
-            <button onClick={createReserv}>Create Reserv</button>
+            <button onClick={createReserv}>Create Reserv</button> */}
             {users.map((user) => {
                 return (
                     <div>
