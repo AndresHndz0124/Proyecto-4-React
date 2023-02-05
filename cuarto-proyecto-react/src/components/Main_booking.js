@@ -26,6 +26,7 @@ function Main_booking() {
     const deleteReserv = async (id) => {
         const userDoc = doc(db, "Viewers", id)
         await deleteDoc(userDoc);
+        window.location.reload()
     }
 
 
