@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/css/main.c24befff.css",
-    "main.js": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/js/main.44ca5d48.js",
-    "static/js/787.18f4d27f.chunk.js": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/js/787.18f4d27f.chunk.js",
-    "index.html": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/index.html",
-    "main.c24befff.css.map": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/css/main.c24befff.css.map",
-    "main.44ca5d48.js.map": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/js/main.44ca5d48.js.map",
-    "787.18f4d27f.chunk.js.map": "/AndresHndz0124/Proyecto-4-React/tree/main/cuarto-proyecto-react/static/js/787.18f4d27f.chunk.js.map"
+    "main.css": "/Proyecto-4-React/static/css/main.c24befff.css",
+    "main.js": "/Proyecto-4-React/static/js/main.658f59c1.js",
+    "static/js/787.18f4d27f.chunk.js": "/Proyecto-4-React/static/js/787.18f4d27f.chunk.js",
+    "index.html": "/Proyecto-4-React/index.html",
+    "main.c24befff.css.map": "/Proyecto-4-React/static/css/main.c24befff.css.map",
+    "main.658f59c1.js.map": "/Proyecto-4-React/static/js/main.658f59c1.js.map",
+    "787.18f4d27f.chunk.js.map": "/Proyecto-4-React/static/js/787.18f4d27f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c24befff.css",
-    "static/js/main.44ca5d48.js"
+    "static/js/main.658f59c1.js"
   ]
 }
