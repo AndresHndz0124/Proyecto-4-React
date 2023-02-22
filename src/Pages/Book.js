@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Footer_Page from "./footer";
+import FooterPage from "./footer";
 import Mainbooking from "../components/MainBooking";
 
 function Booking() {
@@ -8,7 +8,7 @@ function Booking() {
         <React.Fragment>
             <Header />
             <Mainbooking/>
-            <Footer_Page />
+            <FooterPage />
         </React.Fragment>
     )
 }

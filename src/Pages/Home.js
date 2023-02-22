@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Footer_Page from "./footer";
+import FooterPage from "./footer";
 import ContactForm from "../components/forms";
 
 function HOME() {
@@ -24,7 +24,7 @@ function HOME() {
                     <ContactForm />
                 </div>
             </div>
-            <Footer_Page />
+            <FooterPage />
         </React.Fragment>
     )
 }

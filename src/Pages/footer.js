@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-function Footer_Page() {
+function FooterPage() {
     return (
         <footer className="bg-dark text-center text-white">
 
@@ -53,4 +53,4 @@ function Footer_Page() {
     );
 }
 
-export default Footer_Page;
+export default FooterPage;
