@@ -5,7 +5,7 @@ import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase
 import { async } from "@firebase/util";
 
 
-function Main_booking(props) {
+function Mainbooking() {
     // const [NewName, SetNewName] = useState("")
     // const [NewPhone, SetPhone] = useState(0)
     // const [NewEmail, SetEmail] = useState("")
@@ -57,4 +57,4 @@ function Main_booking(props) {
         </div>
     )
 }
-export default Main_booking
+export default Mainbooking

@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./Header";
 import Footer_Page from "./footer";
-import Main_booking from "../components/Main_booking";
+import Mainbooking from "../components/MainBooking";
 
 function Booking() {
     return (
         <React.Fragment>
             <Header />
-            <Main_booking/>
+            <Mainbooking/>
             <Footer_Page />
         </React.Fragment>
     )
