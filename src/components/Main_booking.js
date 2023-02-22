@@ -4,7 +4,8 @@ import { db } from "../Pages/firebae-config"
 import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore"
 import { async } from "@firebase/util";
 
-function Main_booking() {
+
+function Main_booking(props) {
     // const [NewName, SetNewName] = useState("")
     // const [NewPhone, SetPhone] = useState(0)
     // const [NewEmail, SetEmail] = useState("")
@@ -28,8 +29,6 @@ function Main_booking() {
         await deleteDoc(userDoc);
         window.location.reload()
     }
-
-
     useEffect(() => {
         const GetUsers = async () => {
             const data = await getDocs(ViewersCollection)
@@ -40,10 +39,6 @@ function Main_booking() {
 
     return (
         <div className='main'>
-            {/* {users.map((user, index) => {
-                return (<Card key={index} usuario={user} />
-                )
-            })} */}
             {Viewers.map((user) => {
                 return (
                     <div className='card'>

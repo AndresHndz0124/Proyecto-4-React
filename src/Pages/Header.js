@@ -29,8 +29,8 @@ function Header() {
                             </li>
 
                             <li className="nav-item">
-                                {/* <Link className="nav-link" aria-current="page" to="/Ourmenu"><u>Nuestro Menú</u></Link> */}
-                                <a className="nav-link" href="#"><u>Nuestro Menú</u></a>
+                                <Link className="nav-link" aria-current="page" to="/Ourmenu"><u>Nuestro Menú</u></Link>
+                                {/* <a className="nav-link" href="#"><u>Nuestro Menú</u></a> */}
                             </li>
 
                         </ul>
