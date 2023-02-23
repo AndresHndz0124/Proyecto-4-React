@@ -1,6 +1,6 @@
 # Proyecto No. 4: Restaurant App React
 
-URL https://andreshndz0124.github.io/Proyecto-4-React/
+URL https://elaborate-smakager-891d29.netlify.app/
 
 ## 1. Intro
 El siguiente codigo hace referencia al segundo proyecto del modulo de Fronted del Bootcamp de UCAMP.
