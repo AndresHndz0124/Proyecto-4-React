@@ -2,11 +2,11 @@ import React from 'react'
 import { useState, useEffect } from "react"
 import { db } from "../Pages/firebae-config"
 import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore"
-import { async } from "@firebase/util";
-import Cards from './Cards';
+// import { async } from "@firebase/util";
+// import Cards from './Cards';
 
 
-function Main_prop() {
+function Mainprop() {
     const [Viewers, SetViewer] = useState([])
     const ViewersCollection = collection(db, "Viewers")
 
@@ -31,7 +31,7 @@ function Main_prop() {
         </div>
     )
 }
-export default Main_prop
+export default Mainprop
 
 
 // import React from 'react'

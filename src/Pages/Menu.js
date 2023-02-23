@@ -1,14 +1,13 @@
 import React from "react";
 import Header from "./Header";
 import FooterPage from "./footer";
-import ContactForm from "../components/forms";
-import Main_prop from "../components/Main";
+import Mainprop from "../components/Main";
 
 function Ourmenu() {
     return (
         <React.Fragment>
             <Header />
-            <Main_prop/>
+            <Mainprop/>
             <FooterPage />
         </React.Fragment>
     )

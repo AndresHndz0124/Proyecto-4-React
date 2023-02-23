@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react"
 import { db } from "../Pages/firebae-config"
 import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore"
-import { async } from "@firebase/util";
+// import { async } from "@firebase/util";
 
 
 function Mainbooking() {

@@ -18,7 +18,7 @@ function HOME() {
 
                     <div className="subscription">
                         <h2 >Reserva con nosotros!</h2>
-                        <h5>A travéz dels iguiente formulario, nos podremos comunicar contigo para revisar fechas y disponibilidad de horarios.</h5>
+                        <h5>A través del siguiente formulario, nos podremos comunicar contigo para revisar fechas y disponibilidad de horarios.</h5>
                     </div>
 
                     <ContactForm />
