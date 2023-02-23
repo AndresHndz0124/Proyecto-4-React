@@ -21,15 +21,15 @@ function Header() {
 
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/"><u>Home</u></Link>
+                                <Link className="nav-link" aria-current="page" to="/home"><u>Home</u></Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/Booking"><u>Reservas</u></Link>
+                                <Link className="nav-link" aria-current="page" to="/booking"><u>Reservas</u></Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="/Ourmenu"><u>Nuestro Menú</u></Link>
+                                <Link className="nav-link" aria-current="page" to="/ourmenu"><u>Nuestro Menú</u></Link>
                                 {/* <a className="nav-link" href="#"><u>Nuestro Menú</u></a> */}
                             </li>
 
