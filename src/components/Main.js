@@ -6,15 +6,9 @@ import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase
 import Cards from './Cards';
 
 
-function Mainprop() {
+export default function Mainprop() {
     const [Viewers, SetViewer] = useState([])
     const ViewersCollection = collection(db, "Viewers")
-
-    const deleteReserv = async (id) => {
-        const userDoc = doc(db, "Viewers", id)
-        await deleteDoc(userDoc);
-        window.location.reload()
-    }
 
     useEffect(() => {
         const GetUsers = async () => {
@@ -31,4 +25,4 @@ function Mainprop() {
 
     )
 }
-export default Mainprop
+// export default Mainprop

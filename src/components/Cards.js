@@ -1,9 +1,21 @@
 import React from "react"
-import ListItem from "./List_label";
-import Mainprop from "./Main";
+import { db } from "../Pages/firebae-config"
+import { collection, doc, deleteDoc } from "firebase/firestore"
 
 export default function Cards(props) {
     const { items } = props;
+
+    const ViewersCollection = collection(db, "Viewers")
+
+    const deleteReserv = async (id) => {
+        const userDoc = doc(db, "Viewers", id)
+        await deleteDoc(userDoc);
+        window.location.reload()
+    }
+
+    // const DeleteCards = async (hla) => {
+    //     console.log(`Estas parado en${hla}`)
+    //         }
 
     return (
         items.map((item) => {
@@ -16,8 +28,7 @@ export default function Cards(props) {
                         <p>Numero de personas: {item.Number_persons}</p>
                         <p>Fecha: {item.Date}</p>
                     </div>
-                    <button type="button" class="btn btn-danger" onClick={() => { Mainprop.deleteReserv(item.id) }}>Delete</button>
-
+                    <button type="button" class="btn btn-danger" onClick={() => { deleteReserv(item.id) }}>Delete</button>
                 </div>
             )
         })

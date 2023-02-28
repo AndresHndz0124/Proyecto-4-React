@@ -28,10 +28,10 @@ function Header() {
                                 <Link className="nav-link" aria-current="page" to="/booking"><u>Reservas</u></Link>
                             </li>
 
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="/ourmenu"><u>Nuestro Menú</u></Link>
-                                {/* <a className="nav-link" href="#"><u>Nuestro Menú</u></a> */}
-                            </li>
+                                <a className="nav-link" href="#"><u>Nuestro Menú</u></a>
+                            </li> */}
 
                         </ul>
                     </div>
